@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/calendarFragment">
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.myhealth.ui.pages.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar">
+        <action android:id="@+id/calendar_to_addMedicines1"
+            app:destination="@id/addMedicines1" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicines1"
+        android:name="com.example.myhealth.ui.pages.AddMedicines1"
+        android:label="fragment_add_medicines1"
+        tools:layout="@layout/fragment_add_medicines1" >
+        <action
+            android:id="@+id/addMedicines1_to_addMedicines2"
+            app:destination="@id/addMedicines2" />
+        <action
+            android:id="@+id/addMedicines1_to_calendar"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicines2"
+        android:name="com.example.myhealth.ui.pages.AddMedicines2"
+        android:label="fragment_add_medicines2"
+        tools:layout="@layout/fragment_add_medicines2" >
+        <action
+            android:id="@+id/addMedicines2_to_addMedicines3"
+            app:destination="@id/addMedicines3" />
+        <action
+            android:id="@+id/addMedicines2_to_addMedicines1"
+            app:destination="@id/addMedicines1" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicines3"
+        android:name="com.example.myhealth.ui.pages.AddMedicines3"
+        android:label="fragment_add_medicines3"
+        tools:layout="@layout/fragment_add_medicines3" >
+        <action
+            android:id="@+id/addMedicines3_to_calendar"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/addMedicines3_to_addMedicines2"
+            app:destination="@id/addMedicines2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/medicinesFragment"
+        android:name="com.example.myhealth.ui.pages.MedicinesFragment"
+        android:label="fragment_medicines"
+        tools:layout="@layout/fragment_medicines" />
+
+
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.myhealth.ui.pages.DiaryFragment"
+        android:label="fragment_diary"
+        tools:layout="@layout/fragment_diary" >
+        <action
+            android:id="@+id/diary_to_weight"
+            app:destination="@id/weightFragment" />
+        <action
+            android:id="@+id/diary_to_pressure"
+            app:destination="@id/pressureFragment" />
+        <action
+            android:id="@+id/diary_to_temperature"
+            app:destination="@id/temperatureFragment" />
+        <action
+            android:id="@+id/diary_to_water"
+            app:destination="@id/waterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.myhealth.ui.pages.WeightFragment"
+        android:label="fragment_weight"
+        tools:layout="@layout/fragment_weight" >
+        <action
+            android:id="@+id/weight_to_diary"
+            app:destination="@id/diaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pressureFragment"
+        android:name="com.example.myhealth.ui.pages.PressureFragment"
+        android:label="fragment_pressure"
+        tools:layout="@layout/fragment_pressure" >
+        <action
+            android:id="@+id/pressure_to_diary"
+            app:destination="@id/diaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/temperatureFragment"
+        android:name="com.example.myhealth.ui.pages.TemperatureFragment"
+        android:label="fragment_temperature"
+        tools:layout="@layout/fragment_temperature" >
+        <action
+            android:id="@+id/temperature_to_diary"
+            app:destination="@id/diaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterFragment"
+        android:name="com.example.myhealth.ui.pages.WaterFragment"
+        android:label="fragment_water"
+        tools:layout="@layout/fragment_water" >
+        <action
+            android:id="@+id/water_to_diary"
+            app:destination="@id/diaryFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.myhealth.ui.pages.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/settings_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myhealth.ui.pages.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/login_to_registration"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/login_to_calendar"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.myhealth.ui.pages.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/registration_to_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/registration_to_calendar"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+
+
+</navigation>

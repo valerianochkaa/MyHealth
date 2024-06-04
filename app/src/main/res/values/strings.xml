@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Мое здоровье</string>
+
+    <string name="menu_calendar">Календарь</string>
+    <string name="menu_medicines">Медикаменты</string>
+    <string name="menu_diary">Дневник</string>
+    <string name="menu_settings">Настройки</string>
+
+    <string name="login_title">Вход</string>
+    <string name="login_editNumber">Номер телефона / почта</string>
+    <string name="login_editPass">Пароль</string>
+    <string name="login_btnLogin">Войти</string>
+    <string name="login_question">Нет аккаунта?</string>
+    <string name="login_btnReg">Зарегистрироваться</string>
+
+    <string name="reg_title">Регистрация</string>
+    <string name="reg_editNumber">Номер телефона</string>
+    <string name="reg_editEmail">Почта</string>
+    <string name="reg_editPass">Пароль</string>
+    <string name="reg_editReturnPass">Повторите пароль</string>
+    <string name="reg_btnReg">Зарегистрироваться</string>
+    <string name="reg_question">Есть аккаунт? </string>
+    <string name="reg_btnLogin">Войти</string>
+
+    <string name="calendar_date">пн, январь 1</string>
+    <string name="calendar_blankTitle">Придерживайтесь медицинских напоминаний</string>
+    <string name="calendar_blankSubtitle">нажмите на плюс, чтобы добавить лекарство</string>
+
+    <string name="addMedicines_title">Добавить лекарство</string>
+    <string name="addMedicines_step1">1/3</string>
+    <string name="addMedicines_step1_title">Выберите категорию товара</string>
+    <string name="addMedicines_categoryPill">Таблетки</string>
+    <string name="addMedicines_categoryCapsules">Капсулы</string>
+    <string name="addMedicines_categorySpray">Спрей</string>
+    <string name="addMedicines_categoryOintment">Укол</string>
+    <string name="addMedicines_categoryCream">Мазь</string>
+    <string name="addMedicines_categoryDrops">Капли</string>
+
+    <string name="addMedicines_step2">2/3</string>
+    <string name="addMedicines_step2_title">Выберите лекарство</string>
+    <string name="addMedicines_step2_search">Поиск</string>
+    <string name="addMedicines_step2_search_blank">Ничего не найдено</string>
+
+    <string name="addMedicines_step3">3/3</string>
+    <string name="addMedicines_step3_subtitle1">Введите одноразовую дозу</string>
+    <string name="addMedicines_step3_editDose">Количество</string>
+    <string name="addMedicines_step3_subtitle2">Время приема</string>
+    <string name="addMedicines_step3_time">07 : 00</string>
+    <string name="addMedicines_step3_subtitle3">Дата начала приема</string>
+    <string name="addMedicines_step3_subtitle4">Дата окончания приема</string>
+    <string name="addMedicines_step3_date">01.01.2024</string>
+    <string name="addMedicines_step3_btn">Добавить лекартсво</string>
+
+    <string name="medicines_title">Медикаменты</string>
+    <string name="medicines_tab1">Активно</string>
+    <string name="medicines_tab2">Завершено</string>
+    <string name="medicines_blankTitle">Пусто</string>
+    <string name="medicines_blankSubtitle">У вас отсутствую активные медикаменты</string>
+
+    <string name="diary_title">Дневник здоровья</string>
+    <string name="diary_weight">ВЕС</string>
+    <string name="diary_pressure">ДАВЛЕНИЕ</string>
+    <string name="diary_temperature">ТЕМПЕРАТУРА</string>
+    <string name="diary_water">ВОДНЫЙ БАЛАНС</string>
+
+    <string name="diary_weight_title">Вес</string>
+    <string name="diary_weight_subtitle1">Добавить измерение</string>
+    <string name="diary_weight_editUnit">кг</string>
+    <string name="diary_weight_btnAdd">Добавить</string>
+    <string name="diary_weight_subtitle2">История</string>
+    <string name="diary_weight_description">Регулярные измерения помогут врачу правильно оценить ваше состояние</string>
+
+    <string name="diary_pressure_title">Давление и пульс</string>
+    <string name="diary_pressure_subtitle1">Добавить измерение</string>
+    <string name="diary_pressure_editUnit1">верхнее, SYS</string>
+    <string name="diary_pressure_editUnit2">нижниее, DIA</string>
+    <string name="diary_pressure_editUnit3">пульс, уд./мин</string>
+    <string name="diary_pressure_btnAdd">Добавить</string>
+    <string name="diary_pressure_subtitle2">История</string>
+    <string name="diary_pressure_description">Регулярные измерения помогут врачу правильно оценить ваше состояние</string>
+
+    <string name="diary_temperature_title">Температура</string>
+    <string name="diary_temperature_subtitle1">Добавить измерение</string>
+    <string name="diary_temperature_editUnit">°С</string>
+    <string name="diary_temperature_btnAdd">Добавить</string>
+    <string name="diary_temperature_subtitle2">История</string>
+    <string name="diary_temperaturet_description">Регулярные измерения помогут врачу правильно оценить ваше состояние</string>
+
+    <string name="diary_water_title">Водный баланс</string>
+    <string name="diary_water_card">выпито воды</string>
+    <string name="diary_water_btnChange">Изменить цель</string>
+    <string name="diary_water_goal_completed">100</string>
+    <string name="diary_water_goal_divider">/</string>
+    <string name="diary_water_goal">1000</string>
+    <string name="diary_water_btn50">+50 мл</string>
+    <string name="diary_water_btn100">+100 мл</string>
+    <string name="diary_water_btn250">+250 мл</string>
+    <string name="diary_water_btn500">+500 мл</string>
+    <string name="diary_water_subtitle2">История</string>
+    <string name="diary_water_description2">Регулярные измерения помогут врачу правильно оценить ваше состояние</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_subtitle1">Тема приложения</string>
+    <string name="settings_subtitle2">Установить норму воды</string>
+    <string name="settings_subtitle3">О приложении</string>
+    <string name="settings_btnExit">Выйти из аккаунта</string>
+
+    <string name="settings_dialog1_title">Норма воды</string>
+    <string name="settings_dialog1_edit">0</string>
+    <string name="settings_dialog1_btn">Сохранить</string>
+
+    <string name="settings_dialog2_title">О приложении</string>
+    <string name="settings_dialog2_subtitle1">"Мое здоровье"  это приложение, которое поможет вам вовремя принимать лекарства, следить за весом, давлением, уровнем воды в организме и температурой тела</string>
+    <string name="settings_dialog2_subtitle2">"Данное приложение было разработано в рамках курсовой работы ученицы РТУ МИРЭА Иванова В.А. ИКБО–26–21"</string>
+
+    <string name="addMedicines_drug_title">Инструкция по применению</string>
+    <string name="addMedicines_drug_name">Название лекарства</string>
+    <string name="addMedicines_drug_description">Описание</string>
+    <string name="addMedicines_drug_ingredients">Действующие вещества</string>
+    <string name="addMedicines_drug_releases">Форма выпуска</string>
+    <string name="addMedicines_drug_composition">Состав</string>
+    <string name="addMedicines_drug_indications">Показания</string>
+    <string name="addMedicines_drug_contraindications">Противопоказания</string>
+
+    <string name="item_calendar_num">1</string>
+    <string name="item_calendar_week">пн</string>
+
+    <string name="item_medicines_name">Название лекарства</string>
+    <string name="item_medicines_count">Количество</string>
+    <string name="item_medicines_count_example">1</string>
+    <string name="item_medicines_time">07:00</string>
+
+    <string name="item_medicines_activ_name">Название лекарства</string>
+    <string name="item_medicines_activ_title_count">Осталось: </string>
+    <string name="item_medicines_activ_title_days">Осталось дней:</string>
+    <string name="item_medicines_activ_count">1</string>
+    <string name="item_medicines_activ_days">1</string>
+
+    <string name="item_medicines_noactiv_name">Название лекарства</string>
+    <string name="item_medicines_noactiv_title_start_days">Начало приема: </string>
+    <string name="item_medicines_noactiv_title_end_days">Окончание приема:</string>
+    <string name="item_medicines_noactiv_days">01.01.2024</string>
+
+    <string name="item_medicines_search_name">Название лекарства</string>
+
+    <string name="item_diary_count">52 кг</string>
+    <string name="item_diary_date">1 января, 07:24</string>
+</resources>

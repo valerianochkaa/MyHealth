@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calendarFragment"
+        android:title="@string/menu_calendar"
+        android:icon="@drawable/ic_menu1"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/medicinesFragment"
+        android:title="@string/menu_medicines"
+        android:icon="@drawable/ic_menu2"
+        android:orderInCategory="2"/>
+    <item
+        android:id="@+id/diaryFragment"
+        android:title="@string/menu_diary"
+        android:icon="@drawable/ic_menu3"
+        android:orderInCategory="3"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_menu4"
+        android:orderInCategory="4"/>
+</menu>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.pages.WaterFragment">
+    <LinearLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_action_arrow"/>
+        <TextView
+            style="@style/Header2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/diary_water_title"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.Material3.CircularProgressIndicator"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminate="false"
+            android:progress="50"
+            android:progressDrawable="@drawable/circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            style="@style/TextTitle"
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="50%" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/goal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/corners"
+            android:backgroundTint="@color/card_tertiary"
+            android:padding="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnGoal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/icDrop"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_drop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/resWater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                app:layout_constraintStart_toEndOf="@id/icDrop"
+                app:layout_constraintTop_toTopOf="@+id/icDrop">
+
+                <TextView
+                    android:id="@+id/resDrunk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="300"
+                    android:textColor="@color/text_tertiary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="/"
+                    android:textColor="@color/text_tertiary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/resPurpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="1500"
+                    android:textColor="@color/text_hint"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="16dp"
+                android:text="@string/diary_water_card"
+                android:textColor="@color/text_tertiary"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/resWater"
+                app:layout_constraintTop_toBottomOf="@id/resWater" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnGoal"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="0dp"
+            android:background="@drawable/corners"
+            android:backgroundTint="@color/button_active"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/icStar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textChange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/diary_water_btnChange"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icStar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnsNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goal">
+
+            <Button
+                android:id="@+id/btn50"
+                style="@style/SmallButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/diary_water_btn50"
+                app:layout_constraintEnd_toStartOf="@+id/btn100"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent=".23" />
+
+            <Button
+                android:id="@+id/btn100"
+                style="@style/SmallButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/diary_water_btn100"
+                app:layout_constraintEnd_toStartOf="@+id/btn250"
+                app:layout_constraintStart_toEndOf="@+id/btn50"
+                app:layout_constraintWidth_percent=".22" />
+
+            <Button
+                android:id="@+id/btn250"
+                style="@style/SmallButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/diary_water_btn250"
+                app:layout_constraintEnd_toStartOf="@+id/btn500"
+                app:layout_constraintStart_toEndOf="@+id/btn100"
+                app:layout_constraintWidth_percent=".22" />
+
+            <Button
+                android:id="@+id/btn500"
+                style="@style/SmallButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="@string/diary_water_btn500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn250"
+                app:layout_constraintWidth_percent=".23" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/subtitle2"
+            style="@style/Header1"
+            android:text="@string/diary_weight_subtitle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnsNum" />
+        <TextView
+            android:id="@+id/description"
+            style="@style/Body15"
+            android:layout_marginTop="18dp"
+            android:text="@string/diary_weight_description"
+            android:textColor="@color/text_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
